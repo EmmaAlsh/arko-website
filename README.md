@@ -3,7 +3,7 @@
 A responsive coffee shop website built with vanilla JavaScript, CSS, and Webpack.  
 All page content is generated dynamically using JavaScript modules — no HTML was written by hand.
 
-**[Live Demo](#)** *(coming soon)*
+🔗 **[Live Demo](https://emmaalsh.github.io/arko-website/)**
 
 ## 🗂️ Pages
 
@@ -45,6 +45,11 @@ npm install
  
 ```bash
 npm run build
+```
+## Run the development server:
+
+```bash
+npm start
 ```
 
 ### 4. Open the application
