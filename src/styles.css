@@ -728,7 +728,27 @@ body {
   }
 
   .hero {
-    padding-top: 6rem; 
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  h1,
+  h2 {
+    transform: translateY(-7rem);
+  }
+
+  header.hero-mobile {
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translateX(-50%);
+  }
+
+  header.hero-mobile nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .line-left,
@@ -750,7 +770,7 @@ body {
   }
 
   button {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   nav {

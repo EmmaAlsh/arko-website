@@ -696,19 +696,23 @@ window.addEventListener('scroll', () => {
   if (heroRect.bottom > 0) {
     header.classList.remove('light');
     header.classList.add('dark');
+    header.classList.add('hero-mobile');
     navLogo.classList.remove('visible');
     navLogo.src = arkoLogo;
   } else if (menuRect.top < window.innerHeight && menuRect.bottom > 0) {
+    header.classList.remove('hero-mobile');
     header.classList.remove('dark');
     header.classList.add('light');
     navLogo.classList.add('visible');
     navLogo.src = arkoLogo;
   } else if (brewingRect.top < window.innerHeight && brewingRect.bottom > 0) {
+    header.classList.remove('hero-mobile');
     header.classList.remove('light');
     header.classList.add('dark');
     navLogo.classList.add('visible');
     navLogo.src = arkoLogoDark;
   } else if (bakeryRect.top < window.innerHeight) {
+    header.classList.remove('hero-mobile');
     header.classList.remove('dark');
     header.classList.add('light');
     navLogo.classList.add('visible');
