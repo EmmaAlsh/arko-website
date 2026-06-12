@@ -69,8 +69,10 @@ header.prepend(navLogo); //lo agrego antes que los botones del nav asi queda a l
 const rectWidth = 40;
 const gap = 40;
 const totalPerRect = rectWidth + gap;
-const numberOfRects = Math.ceil(window.innerWidth / totalPerRect) + 1; 
+const extraRects = window.innerWidth <= 768 ? 8 : 1;
 
+const numberOfRects =
+  Math.ceil(window.innerWidth / totalPerRect) + extraRects;
 //makeRow: crea una fila de rectángulos.
 const makeRow = (cls, offset = false, src = rectangle) => {
   const row = document.createElement("div");

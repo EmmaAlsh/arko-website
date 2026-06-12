@@ -732,8 +732,8 @@ body {
     padding-top: 0;
   }
 
-  h1,
-  h2 {
+  .hero h1,
+  .hero h2 {
     transform: translateY(-7rem);
   }
 
@@ -777,6 +777,23 @@ body {
     gap: 0.8rem;
   }
 
+  .rect,
+  .rect-bottom,
+  .rect-bottom-2,
+  .rect-bottom-3,
+  .rect-bottom-4 {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .transition-row {
+    gap: 1.2rem;
+  }
+
+  .transition-row.offset {
+    margin-left: 1.2rem;
+  }
+  
   .menu {
     padding: 0 1rem 3rem 1rem;
   }
@@ -787,7 +804,7 @@ body {
   }
 
   .menu-title {
-    margin-top: 10rem;
+    margin-top: 6rem;
     font-size: 3.5rem;
   }
 
@@ -796,7 +813,7 @@ body {
     padding: 0 0.5rem;
     text-align: center;
   }
-
+  
   .breakfast-title {
     font-size: 1.8rem;
   }
