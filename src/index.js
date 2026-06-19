@@ -30,6 +30,7 @@ heroSection.classList.add("hero");
 /* HEADER + NAV */
 const header = document.createElement("header");
 header.classList.add("dark");
+if (window.innerWidth <= 500) header.classList.add('hero-mobile');
 const nav = document.createElement("nav");
 
 const menuBtn = document.createElement("button");
@@ -698,7 +699,7 @@ window.addEventListener('scroll', () => {
   if (heroRect.bottom > 0) {
     header.classList.remove('light');
     header.classList.add('dark');
-    header.classList.add('hero-mobile');
+    if (window.innerWidth <= 500) header.classList.add('hero-mobile');
     navLogo.classList.remove('visible');
     navLogo.src = arkoLogo;
   } else if (menuRect.top < window.innerHeight && menuRect.bottom > 0) {
