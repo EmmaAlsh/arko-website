@@ -734,7 +734,7 @@ body {
 
   .hero h1,
   .hero h2 {
-    transform: translateY(-7rem);
+    transform: translateY(-5.6rem);
   }
 
   header.hero-mobile {
@@ -778,6 +778,10 @@ body {
     gap: 0.8rem;
   }
 
+  .item-name {
+    padding-bottom: 0.5rem;
+  }
+
   .rect,
   .rect-bottom,
   .rect-bottom-2,
@@ -813,6 +817,7 @@ body {
     font-size: 1rem;
     padding: 0 0.5rem;
     text-align: center;
+    color: #dfc592;
   }
   
   .breakfast-title {
@@ -825,6 +830,8 @@ body {
 
   .menu-subtitle {
     font-size: 1.1rem;
+    color: #8A9A5B;
+    padding-bottom: 0.5rem;
   }
 
   .menu-item {
@@ -857,6 +864,7 @@ body {
 
   .bigger-subtitle {
     font-size: 1.6rem;
+    padding-bottom: 0.5rem;
   }
 
   .menu-section-2 {
@@ -881,7 +889,9 @@ body {
   }
 
   .brewing-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #6f1d1b;
+    padding-bottom: 1rem;
   }
 
   .bigger-subtitle-brewing {
@@ -896,7 +906,12 @@ body {
   .brewing-item .dots {
     display: none;
   }
-
+  .opcional {
+    color: #6F1D1B;
+  }
+  .opcional2 {
+    color: #dfc592;
+  }
   .brewing-item .item-name {
     flex: 1;
   }
@@ -928,6 +943,7 @@ body {
 
   .section3-subtitle {
     font-size: 1.2rem;
+    padding-bottom: 0.5rem;
   }
 
 
@@ -972,6 +988,7 @@ body {
   .section4-subtitle {
     font-size: 1.4rem;
     margin-top: 2rem;
+    color: #dfc592;
   }
 
   .section4-text {

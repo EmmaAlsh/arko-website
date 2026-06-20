@@ -244,7 +244,7 @@ const tazaGrandeOptions = createOptionsBlock([
 const optionalItem = document.createElement("div");
 optionalItem.classList.add("menu-item");
 const optionalName = document.createElement("span");
-optionalName.classList.add("item-name");
+optionalName.classList.add("item-name", "opcional");
 optionalName.textContent = "*Opcional con leche vegetal sin costo adicional.";
 optionalItem.append(optionalName);
 tazaGrandeOptions.append(optionalItem);
@@ -281,6 +281,9 @@ const createBrewingItem = (name, price = null) => {
   item.classList.add("brewing-item");
   const itemName = document.createElement("span");
   itemName.classList.add("item-name");
+  if (name === "*Opcional con leche vegetal sin costo adicional.") {
+    itemName.classList.add("opcional");
+  }
   itemName.textContent = name;
   item.append(itemName);
   if (price) {
@@ -462,9 +465,19 @@ const medialunaGroup = createBakeryGroup([
 ], medialuna, "medialuna-img");
 
 /* Tostadas */
+const toastInfo = document.createElement("div");
+toastInfo.classList.add("panaderia-item");
+
+const toastInfoText = document.createElement("span");
+toastInfoText.classList.add("item-name", "opcional2");
+toastInfoText.textContent =
+  "*Las tostadas incluyen dúo de untables: queso crema, mermelada, dulce de leche o manteca.";
+
+toastInfo.append(toastInfoText);
+
 const toastGroup = createBakeryGroup([
   createBakeryItem("Tostadas pan de campo, integrales o masa madre", "$4000"),
-  createBakeryItem("*Las tostadas incluyen dúo de untables: queso crema, mermelada, dulce de leche o manteca."),
+  toastInfo,
   createBakeryItem("*Opcional Nutella", "$2000"),
 ], toast, "toast-img");
 
